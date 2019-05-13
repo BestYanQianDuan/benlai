@@ -1,0 +1,589 @@
+@charset "utf-8";
+@import "header";
+@import "footer";
+$box_width:100%;
+$wrap_width:1200px;
+$wrap_center:0 auto;
+$ul_width:990px;
+$left_width:42px;
+$left_top:0px;
+$left_left:14px;
+$hover_color:#eb6100;
+$a_color:#666;
+$a_height:42px;
+$banner_height:400px;
+.clear {
+    clear: both;
+}
+
+
+/*左侧楼层列表 开始*/
+
+.left_menu {
+    z-index: 69;
+    width: $left_width;
+    top: $left_top;
+    left: $left_left;
+    display: none;
+    position: fixed;
+    a.active {
+        background-color: #78a000;
+        background-position-x: -43px;
+    }
+    a {
+        width: $left_width;
+        height: $a_height;
+        display: block;
+        float: left;
+        margin-bottom: 5px;
+        background: url('https://image.benlailife.com/webStatic/images/n_index/left_menu_ico_821aa259.png') no-repeat;
+    }
+    a.ico1 {
+        background-position: 0 -516px;
+    }
+    a.ico2 {
+        background-position: 0 -129px;
+    }
+    a.ico3 {
+        background-position: 0 -172px;
+    }
+    a.ico4 {
+        background-position: 0 -215px;
+    }
+    a.ico5 {
+        background-position: 0 -258px;
+    }
+    a.ico6 {
+        background-position: 0 -602px;
+    }
+    a.ico7 {
+        background-position: 0 -387px;
+    }
+    a.ico8 {
+        background-position: 0 -344px;
+    }
+    a.ico9 {
+        background-position: 0 -301px;
+    }
+    a.ico10 {
+        background-position: 0 -473px;
+    }
+}
+
+a:hover {
+    color: $hover_color;
+    text-decoration: underline;
+}
+
+a {
+    color: $a_color;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+/*左侧楼层列表 结束*/
+
+
+/*首页banner图 开始*/
+
+.index_banner {
+    width: $box_width;
+    height: $banner_height;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    .index_wraper {
+        width: $ul_width;
+        margin: $wrap_center;
+        position: relative;
+        z-index: 1;
+        padding-left: 210px;
+        /*banner图标题列表 开始*/
+        ul {
+            position: absolute;
+            top: 370px;
+            right: 0;
+            height: 30px;
+            width: $ul_width;
+            overflow: hidden;
+            transition: all .4s linear;
+            .active {
+                background: #8ab700;
+            }
+            li {
+                width: 163px;
+                margin-left: 2px;
+                float: left;
+                a {
+                    width: 143px;
+                    height: 30px;
+                    display: block;
+                    transition: all .4s linear;
+                    padding: 0 10px;
+                    font: 400 14px/30px "Microsoft YaHei";
+                    color: #626252;
+                    text-decoration: none;
+                    text-overflow: clip;
+                    overflow: hidden;
+                    text-align: center;
+                }
+            }
+        }
+        /*banner图标题列表 结束*/
+        /*左右按钮*/
+        dl {
+            dt {
+                position: absolute;
+                top: 182px;
+                left: 210px;
+                a {
+                    width: 24px;
+                    height: 48px;
+                    background: url(https://image.benlailife.com/webStatic/images/n_index/n_icon_tab_a2631635.png) 7px 15px no-repeat #fff;
+                    display: block;
+                    opacity: .8;
+                }
+            }
+            dd {
+                position: absolute;
+                top: 182px;
+                right: 0;
+                a {
+                    width: 24px;
+                    height: 48px;
+                    background: url(https://image.benlailife.com/webStatic/images/n_index/n_icon_tab_a2631635.png) -43px 15px no-repeat #fff;
+                    display: block;
+                    opacity: .8;
+                }
+            }
+        }
+        /*左右按钮 结束*/
+    }
+    /*banner图片*/
+    .banner_pic {
+        height: $banner_height;
+        position: relative;
+        a {
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+        }
+        a:nth-child(1) {
+            background: rgba(0, 0, 0, 0) url("https://image.benlailife.com/images/gz/banner/20190501/sjswy1.jpg")
+        }
+        a:nth-child(2) {
+            background: rgba(0, 0, 0, 0) url("https://image.benlailife.com/images/gz/banner/20190301/sjjg2093.jpg") no-repeat scroll 50% 0%;
+        }
+        a:nth-child(3) {
+            background: rgba(0, 0, 0, 0) url("https://image.benlailife.com/images/gz/banner/20190301/sjlg1191.jpg") no-repeat scroll 50% 0%;
+        }
+        a:nth-child(4) {
+            background: rgba(0, 0, 0, 0) url("https://image.benlailife.com/images/gz/banner/20190301/sj51zhc.jpg") no-repeat scroll 50% 0%;
+        }
+        a:nth-child(5) {
+            background: rgba(0, 0, 0, 0) url("https://image.benlailife.com/images/gz/banner/20190301/sjgx4.jpg") no-repeat scroll 50% 0%;
+        }
+        a:nth-child(6) {
+            background: rgba(0, 0, 0, 0) url("https://image.benlailife.com/images/gz/banner/20190301/sjhgg30.jpg") no-repeat scroll 50% 0%;
+        }
+    }
+}
+
+.index_banner:hover {
+    .index_wraper {
+        ul {
+            a {
+                background: rgba(255, 255, 255, .78);
+                transition: all .4s linear;
+            }
+        }
+    }
+}
+
+
+/*首页banner图 结束*/
+
+
+/*主体内容 开始*/
+
+
+/*板块公共样式 开始*/
+
+.wrap {
+    width: 1200px;
+    height: 578px;
+    float: left;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    .tab {
+        float: left;
+        width: 1200px;
+        height: 47px;
+        position: relative;
+        z-index: 0;
+        background-color: #f8f8f6;
+        border-bottom: 1px solid #91b678;
+        /*标题*/
+        .tit {
+            float: left;
+            width: 300px;
+            height: 35px;
+            margin: 6px 0 0 15px;
+            em {
+                width: 35px;
+                height: 35px;
+                display: block;
+                float: left;
+                margin-right: 10px;
+                background: url(https://image.benlailife.com/webStatic/images/n_index/left_menu_ico_821aa259.png) no-repeat;
+            }
+            a {
+                font: 400 18px/35px "Microsoft YaHei";
+                color: #626252;
+                text-decoration: none;
+            }
+        }
+    }
+    s {
+        top: 10px;
+        left: 314px;
+        width: 0;
+        height: 27px;
+        border-left: 1px solid #e6e6e6;
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+    }
+    .label {
+        width: 314px;
+        height: 530px;
+        float: left;
+        border-right: 1px solid #eee;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        z-index: 5;
+        img {
+            width: 314px;
+            height: 400px;
+        }
+        /*大图下面的列表*/
+        ul {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-left: 1px solid #eee;
+            float: left;
+            width: 283px;
+            height: 121px;
+            background-color: #fbfbfb;
+            overflow: hidden;
+            padding: 7px 0 0 30px;
+            li {
+                width: 52px;
+                height: 52px;
+                float: left;
+                margin: 0 15px 10px 0;
+                a.four {
+                    line-height: 20px;
+                    padding: 4px 5px 0;
+                    width: 40px;
+                    height: 46px;
+                }
+                a {
+                    border: 1px solid #a6ca44;
+                    text-align: center;
+                    font: 400 14px/50px "Microsoft YaHei";
+                    color: #78a000;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    text-overflow: clip;
+                    display: block;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    dl {
+        height: 27px;
+        width: 124px;
+        float: left;
+        margin: 10px 0;
+        border-right: 1px solid #e5e5e5;
+        .on {
+            top: -10px;
+            left: -1px;
+            a {
+                font: 400 16px/37px "Microsoft YaHei";
+                color: #769b06;
+                padding: 0 0 6px;
+                border-top: 5px solid #91be16;
+                border-left: 1px solid #91b678;
+                border-right: 1px solid #91b678;
+                background-color: #fff;
+                display: block;
+                width: 124px;
+                height: 37px;
+            }
+        }
+        dt {
+            position: relative;
+            z-index: 5;
+            text-align: center;
+        }
+        dd {
+            position: absolute;
+            top: 48px;
+            left: 0;
+            z-index: 4;
+            width: 1200px;
+            height: 530px;
+            .box530 {
+                height: 530px !important;
+                float: right !important;
+            }
+            .sku {
+                width: 885px;
+                ul {
+                    li {
+                        width: 176px;
+                        float: left;
+                        height: 264px;
+                        border-bottom: 1px solid #eee;
+                        border-right: 1px solid #eee;
+                        background-color: #fff;
+                        overflow: hidden;
+                        position: relative;
+                        .box {
+                            border: 4px solid #fff;
+                            width: 140px;
+                            height: 256px;
+                            padding: 0 14px;
+                            position: relative;
+                            transition: all .2s linear;
+                        }
+                        .pic {
+                            margin-top: 15px;
+                            transition: all .2s linear;
+                            img {
+                                width: 140px;
+                                height: 140px;
+                            }
+                        }
+                        .name {
+                            height: 38px;
+                            width: 140px;
+                            text-overflow: clip;
+                            display: block;
+                            overflow: hidden;
+                            margin-top: 15px;
+                            transition: all .2s linear;
+                            a {
+                                font: 400 14px/18px "Microsoft YaHei";
+                                color: #3e4141;
+                            }
+                            font {
+                                height: 19px;
+                                text-overflow: clip;
+                                display: block;
+                                overflow: hidden;
+                            }
+                            span {
+                                font: 400 12px/18px "Microsoft YaHei";
+                                color: #898989;
+                            }
+                        }
+                        .price {
+                            font: 400 17px/25px "Microsoft YaHei";
+                            color: #ff6900;
+                            margin-top: 7px;
+                            transition: all .2s linear;
+                            span {
+                                font: 400 12px/25px "Microsoft YaHei";
+                                color: #686c69;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .btn {
+                            position: absolute;
+                            top: 260px;
+                            left: 0;
+                            transition: all .2s linear;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*板块公共样式 结束*/
+
+
+/*广告图*/
+
+.advertising {
+    float: left;
+    margin-bottom: 10px;
+    width: 1200px;
+    height: 120px;
+    img {
+        margin-left: 75px;
+        width: 1200px;
+        height: 120px;
+    }
+}
+
+
+/*蔬菜菌菇板块 开始*/
+
+.vegetable {
+    .tab {
+        .tit {
+            em.ico2 {
+                background-position: -86px -129px;
+            }
+        }
+    }
+}
+
+
+/*蔬菜菌菇板块 结束*/
+
+
+/*水产海鲜板块 开始*/
+
+.seafood {
+    .tab {
+        .tit {
+            em.ico3 {
+                background-position: -86px -172px;
+            }
+        }
+    }
+}
+
+
+/*水产海鲜板块 结束*/
+
+
+/*肉禽蛋品板块 开始*/
+
+.meat {
+    .tab {
+        .tit {
+            em.ico4 {
+                background-position: -86px -215px;
+            }
+        }
+    }
+}
+
+
+/*肉禽蛋品板块 结束*/
+
+
+/*居家优选板块 开始*/
+
+.athome {
+    .tab {
+        .tit {
+            em.ico5 {
+                background-position: -86px -258px;
+            }
+        }
+    }
+}
+
+
+/*居家优选板块 结束*/
+
+
+/*熟食面点板块 开始*/
+
+.cooked {
+    .tab {
+        .tit {
+            em.ico6 {
+                background-position: -86px -602px;
+            }
+        }
+    }
+}
+
+
+/*熟食面点板块 结束*/
+
+
+/*烘焙乳品板块 开始*/
+
+.dairy {
+    .tab {
+        .tit {
+            em.ico7 {
+                background-position: -86px -387px;
+            }
+        }
+    }
+}
+
+
+/*烘焙乳品板块 结束*/
+
+
+/*酒水冲饮板块 开始*/
+
+.drinks {
+    .tab {
+        .tit {
+            em.ico8 {
+                background-position: -86px -344px;
+            }
+        }
+    }
+}
+
+
+/*酒水冲饮板块 结束*/
+
+
+/*休闲食品板块 开始*/
+
+.relaxation {
+    .tab {
+        .tit {
+            em.ico9 {
+                background-position: -86px -301px;
+            }
+        }
+    }
+}
+
+
+/*休闲食品板块 结束*/
+
+
+/*厨房用品板块 开始*/
+
+.kitchen {
+    .tab {
+        .tit {
+            em.ico10 {
+                background-position: -86px -473px;
+            }
+        }
+    }
+}
+
+
+/*厨房用品板块 结束*/
+
+
+/*主体内容 结束*/

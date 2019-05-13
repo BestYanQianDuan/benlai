@@ -1,0 +1,152 @@
+                    @charset "utf-8";
+                    $box_width:100%;
+                    $wrap_width:1200px;
+                    $wrap_center:0 auto;
+                    $font_familiy:"Microsoft YaHei";
+                    $login_path_color:#959595;
+                    $login_path_lh:40px;
+                    $font_weight:400;
+                    $register_border:1px solid #ddd;
+                    $prompt_color:#ff6900;
+                    $a_color:#8ab700;
+                    .wraper {
+                        width: $wrap_width;
+                        margin: $wrap_center;
+                        clear: both;
+                        .register_banner {
+                            float: right;
+                        }
+                    }
+                    
+                    ul,
+                    li {
+                        vertical-align: bottom;
+                        margin: 0;
+                    }
+                    
+                    #formlogin {
+                        #login {
+                            .path {
+                                width: $wrap_width;
+                                float: left;
+                                color: $login_path_color;
+                                line-height: $login_path_lh;
+                                a {
+                                    color: $login_path_color;
+                                }
+                            }
+                            .register {
+                                float: left;
+                                width: 460px;
+                                border: $register_border;
+                                margin-bottom: 50px;
+                                height: auto !important;
+                                min-height: 388px;
+                                .tit {
+                                    position: relative;
+                                    z-index: 0;
+                                    padding: 35px !important;
+                                    p {
+                                        float: left;
+                                        background: url(https://image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat;
+                                        font: $font_weight 18px/30px $font_familiy;
+                                        padding-left: 40px;
+                                    }
+                                    p.ico00 {
+                                        background-position: 0 -62px;
+                                    }
+                                }
+                                ul {
+                                    padding: 0 30px;
+                                    float: left;
+                                    width: 400px;
+                                    dl {
+                                        float: left;
+                                        width: 398px;
+                                        border: $register_border;
+                                        margin-bottom: 30px;
+                                        padding: 7px 0;
+                                        position: relative;
+                                        z-index: 0;
+                                        s {
+                                            position: absolute;
+                                            top: 8px;
+                                            right: 10px;
+                                            width: 25px;
+                                            height: 25px;
+                                            background: url(https//image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat;
+                                        }
+                                        .yes {
+                                            background-position: 0 -102px;
+                                        }
+                                        p {
+                                            float: left;
+                                            width: 100px;
+                                            text-align: center;
+                                            border-right: $register_border;
+                                            font: $font_weight 14px/28px $font_familiy;
+                                            margin-right: 10px;
+                                            display: inline;
+                                        }
+                                        input {
+                                            font: $font_weight 14px/28px $font_familiy;
+                                            width: 240px;
+                                            height: 28px;
+                                            border: 0;
+                                        }
+                                    }
+                                }
+                                .register_box {
+                                    height: auto !important;
+                                    min-height: 381px;
+                                }
+                                .prompt {
+                                    position: absolute;
+                                    top: -30px;
+                                    left: 0;
+                                    line-height: 30px;
+                                    color: $prompt_color;
+                                }
+                                .choose {
+                                    float: left;
+                                    font: $font_weight 14px/20px $font_familiy;
+                                    width: $box_width;
+                                    margin-bottom: 20px;
+                                    position: relative;
+                                    input {
+                                        float: left;
+                                        margin: 4px 8px 0 0;
+                                    }
+                                    a {
+                                        color: $a_color;
+                                        margin-left: 5px;
+                                    }
+                                }
+                                .btn {
+                                    a {
+                                        float: left;
+                                        width: $box_width;
+                                        text-align: center;
+                                        font: $font_weight 24px/58px $font_familiy;
+                                        color: #fff;
+                                        background-color: $prompt_color;
+                                    }
+                                }
+                                .word {
+                                    float: left;
+                                    width: $box_width;
+                                    text-align: right;
+                                    font: $font_weight 14px/35px $font_familiy;
+                                    padding-bottom: 25px;
+                                    a {
+                                        color: $a_color;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .clear {
+                        clear: both;
+                    }

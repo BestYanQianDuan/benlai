@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>本来生活注册</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/registor.css" />
+</head>
+
+<body>
+    <!--头部盒子-->
+    <div class="header"></div>
+    <!--主体内容 开始-->
+    <div class="wraper">
+        <div id="RegisterTmpl">
+            <div id="registerDiv">
+                <div class="path"><a href="index1.html">首页</a> &gt; 注册</div>
+                <form id="formReg" action="php/reg.php" method="post">
+                    <div class="register">
+                        <ul>
+                            <input type="hidden" id="" name="" value="">
+                            <input type="hidden" name="" id="" value="">
+                            <input type="hidden" id="" name="" value="1">
+                        </ul>
+                        <ul class="tit">
+                            <p class="ico20">手机注册</p>
+                        </ul>
+                        <ul class="register_box">
+                            <dl>
+                                <p>手机号</p>
+                                <input type="text" id="tel" name="tel" value="" class="tel" placeholder="请输入手机号" maxlength="11">
+
+                            </dl>
+                            <dl>
+                                <p>密码</p>
+                                <input type="password" id="password" value="" name="password" class="password">
+                            </dl>
+                            <dl class="mb20">
+
+                                <p>确认密码</p>
+                                <input type="password" id="confirm" value="" name="confirm" class="confirm">
+
+                            </dl>
+                            <div class="choose">
+                                <input type="checkbox" id="" name="">我已阅读并同意
+                                <a href="javascript:;" class="service">《本来生活网用户协议》</a>以及
+                                <a href="javascript:;" class="service">《隐私政策》</a>
+                            </div>
+                            <div class="btn choose" style="padding-top: 10px;">
+                                <div class="prompt" style="top: -21px;" id=""></div>
+                                <input type="submit" id="" class="no" value="立即注册" />
+                            </div>
+                            <div class="word">已注册？<a href="login.html">立即登录</a></div>
+                        </ul>
+                    </div>
+                    <!--右侧banner图-->
+                    <div class="register_banner"></div>
+                    <p>
+                        <a href="">
+                            <img src="http://image.benlailife.com/images/gz/banner/20190301/dlmm01.jpg">
+                        </a>
+                    </p>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!--主体内容 结束-->
+    <!--尾部盒子-->
+    <div class="footer"></div>
+    <script src="script/thirdplugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/thirdplugins/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(".header").load("header.html"); //引入头部html
+        $(".footer").load("footer.html"); //引入尾部html
+        $(function() {
+            $("#formReg").validate({
+                rules: { //匹配的规则
+                    tel: {
+                        required: true,
+                        digits: true,
+                        rangelength: [11, 11],
+                        remote: { //将前端的name给后端
+                            url: "php/reg.php", //后台处理程序
+                            type: "post", //数据发送方式
+
+                        }
+                    },
+                    password: {
+                        required: true,
+                        rangelength: [6, 20]
+                    },
+                    confirm: {
+                        required: true,
+                        equalTo: "#password" //值和密码框的值相同
+                    }
+                },
+                messages: { //输出提示
+                    tel: {
+                        required: "请输入手机号码",
+                        digits: "必须是整数",
+                        rangelength: "号码有误"
+                    },
+                    password: {
+                        required: "请输入密码",
+                        rangelength: "密码长度必须介于6 到 20位之间"
+                    },
+                    confirm: {
+                        required: "请输入确认密码",
+                        equalTo: "两次密码输入不一致" //值和密码框的值相同
+                    }
+                }
+
+            });
+        });
+        $.validator.setDefaults({
+            /*添加校验成功后的执行函数--修改提示内容，并为正确提示信息添加新的样式(默认是valid)*/
+            success: function(label) {
+                label.text('√').css('color', 'green').addClass('valid');
+            }
+        });
+    </script>
+</body>
+
+</html>

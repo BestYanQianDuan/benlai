@@ -1,0 +1,471 @@
+@charset "UTF-8";
+.head {
+  width: 100%;
+  float: left;
+  color: #3e4141;
+  font-size: 12px;
+  background: #fff;
+}
+
+/*顶部盒子*/
+.head_top {
+  width: 100%;
+  float: left;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #e5e5e5;
+  /*送至城市*/
+}
+.head_top .login {
+  color: #3e4141;
+  line-height: 30px;
+  float: left;
+  margin-right: 20px;
+}
+.head_top .login a {
+  color: #ff6900;
+  margin: 0 0 0 5px;
+}
+.head_top .head_city {
+  float: left;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 0 -43px no-repeat;
+  padding-left: 34px;
+}
+.head_top .head_city a {
+  display: block;
+  text-align: left;
+  width: 79px;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 6px;
+  color: #3e4141;
+  text-decoration: none;
+  float: left;
+  border: 1px solid #eeeee7;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 70px 8px no-repeat #fff;
+  margin-top: 3px;
+}
+
+.top_box {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 79;
+}
+
+/*顶部盒子菜单*/
+.head_menu {
+  float: right;
+}
+.head_menu ul,
+.head_menu li {
+  vertical-align: bottom;
+  padding: 0;
+  margin: 0;
+}
+.head_menu li {
+  float: left;
+  position: relative;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) right -79px no-repeat;
+}
+.head_menu li .menu_word {
+  margin: 0 15px;
+}
+.head_menu li .menu_word a {
+  line-height: 30px;
+  color: #3e4141;
+}
+.head_menu s {
+  top: 7px;
+  left: 0;
+  width: 0;
+  height: 15px;
+  border-left: 1px solid #e6e6e6;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+/*掌上本来 开始*/
+.head_twocode {
+  float: left;
+}
+.head_twocode dl {
+  width: 101px;
+  height: 30px;
+}
+.head_twocode dl dt a {
+  width: 71px;
+  padding: 0 0 0 30px;
+  display: block;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ipico01_dfa609de.gif) 11px 4px no-repeat;
+  line-height: 30px;
+  color: #3e4141;
+  text-decoration: none;
+}
+.head_twocode dl dd {
+  width: 93px;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  padding: 0 4px;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(192, 192, 192, 0.5);
+  z-index: 78;
+  display: none;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.head_twocode dl dd img {
+  width: 95px;
+  margin-top: 15px;
+}
+.head_twocode dl dd p {
+  color: #3e4141;
+  line-height: 40px;
+  text-align: center;
+}
+
+img {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/*掌上本来 结束*/
+/*客户服务 开始*/
+.head_service {
+  float: left;
+}
+.head_service dl {
+  width: 87px;
+  height: 30px;
+}
+.head_service dl dt a {
+  width: 73px;
+  padding: 0 0 0 14px;
+  display: block;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 65px 13px no-repeat;
+  line-height: 30px;
+  color: #3e4141;
+  text-decoration: none;
+}
+.head_service dl dd {
+  width: 79px;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  padding: 0 4px 7px;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(192, 192, 192, 0.5);
+  z-index: 78;
+  display: none;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.head_service dl dd p {
+  padding: 0 12px;
+}
+.head_service dl dd p a {
+  color: #3e4141;
+  line-height: 22px;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/*客户服务 结束*/
+.wraper {
+  width: 1200px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/*logo盒子 开始*/
+.logo_box {
+  width: 1200px;
+  float: left;
+  padding: 10px 0 20px;
+}
+.logo_box .fl {
+  display: inline;
+  float: left;
+}
+.logo_box .fl h1 {
+  font-size: 20px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+a img {
+  border: 0;
+}
+
+/*logo盒子 结束*/
+/*购物车 开始*/
+.head_buy {
+  float: right;
+  margin: 30px 0 0 20px;
+  position: relative;
+  z-index: 69;
+}
+.head_buy dl {
+  height: 40px;
+}
+.head_buy dl dt {
+  border: 1px solid #e5e5e5;
+  height: 38px;
+  position: relative;
+  z-index: 67;
+}
+.head_buy dl dt .buy_quantity {
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 0 -194px no-repeat;
+  height: 23px;
+  width: 37px;
+  position: absolute;
+  top: -16px;
+  left: 21px;
+  font: 400 14px/19px "Microsoft YaHei";
+  color: #fff;
+  text-align: center;
+  z-index: 68;
+}
+.head_buy dl dt a {
+  display: block;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 98px 17px no-repeat #f8f8f6;
+  font: 400 14px/38px "Microsoft YaHei";
+  color: #3e4141;
+  padding-right: 35px;
+  text-decoration: none;
+}
+.head_buy dl dt s {
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 0 -158px no-repeat;
+  width: 21px;
+  height: 16px;
+  display: inline-block;
+  margin: 12px 13px 0 12px;
+}
+.head_buy dl dd {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(192, 192, 192, 0.5);
+  padding: 0 15px 18px;
+  position: absolute;
+  top: 41px;
+  right: 0;
+  z-index: 66;
+  width: 333px;
+  display: none;
+}
+.head_buy dl dd .none_sku {
+  text-align: center;
+  padding: 28px 0 10px;
+}
+
+/*购物车 结束*/
+/*我的本来 开始*/
+.head_my {
+  float: right;
+  margin: 30px 0 0;
+  position: relative;
+  z-index: 59;
+}
+.head_my dl {
+  height: 40px;
+}
+.head_my dl dt {
+  border: 1px solid #e5e5e5;
+  height: 38px;
+  position: relative;
+  z-index: 58;
+}
+.head_my dl dt a {
+  display: block;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 103px 17px no-repeat #f8f8f6;
+  font: 400 14px/38px "Microsoft YaHei";
+  color: #3e4141;
+  padding-right: 31px;
+  text-decoration: none;
+}
+.head_my dl dt s {
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 0 -121px no-repeat;
+  width: 16px;
+  height: 17px;
+  display: inline-block;
+  margin: 12px 9px 0 11px;
+}
+.head_my dl dd {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(192, 192, 192, 0.5);
+  padding: 0 15px;
+  position: absolute;
+  top: 41px;
+  right: 0;
+  z-index: 57;
+  width: 288px;
+  display: none;
+}
+.head_my dl dd .my_tit {
+  border-bottom: 1px solid #e8e8e8;
+  float: left;
+  width: 288px;
+}
+.head_my dl dd .my_tit .login {
+  margin-left: 15px;
+  color: #3e4141;
+  font: 800 14px/48px "Microsoft YaHei";
+}
+.head_my dl dd .my_tit .login a {
+  color: #ff6900;
+  margin: 0 5px;
+}
+
+/*我的本来 结束*/
+/*搜索框 开始*/
+.head_search {
+  float: right;
+  margin: 30px 45px 0 0;
+  height: 41px;
+  width: 470px;
+  position: relative;
+  z-index: 49;
+  /*搜索框上面盒子 开始*/
+}
+.head_search .search_box {
+  background-color: #91be16;
+  padding: 3px;
+}
+.head_search .search_box input {
+  width: 367px;
+  height: 35px;
+  border: 0;
+  padding: 0 10px;
+  float: left;
+  font: 400 14px/35px "Microsoft YaHei";
+  color: #3e4141;
+}
+.head_search .search_box a {
+  height: 35px;
+  width: 77px;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 0 -265px no-repeat;
+  display: inline-block;
+}
+.head_search .search_word {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  line-height: 32px;
+  height: 32px;
+  width: 470px;
+  overflow: hidden;
+}
+.head_search .search_word em {
+  margin: 0 25px 0 0;
+  padding: 0;
+  float: left;
+  max-width: 445px;
+}
+.head_search .search_word a {
+  color: #8c8c8c;
+  display: block;
+  white-space: nowrap;
+  width: auto;
+}
+.head_search .search_list {
+  border: 1px solid #91be16;
+  background-color: #fff;
+  position: absolute;
+  top: 41px;
+  left: 0;
+  float: left;
+  width: 468px;
+}
+
+/*搜索框上面盒子 结束*/
+input {
+  outline: 0;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+/*搜索框 结束*/
+/*导航条 开始*/
+.menu_bg {
+  height: 44px;
+  width: 100%;
+  background-color: #8ab700;
+  float: left;
+}
+.menu_bg .menu_box {
+  width: 1200px;
+  height: 44px;
+  margin: 0 auto;
+  /*所有商品分类 开始*/
+  /*所有商品分类 结束*/
+}
+.menu_bg .menu_box .menu_all {
+  position: relative;
+  z-index: 39;
+  float: left;
+  width: 210px;
+  /*商品种类菜单 开始*/
+  /*商品种类菜单 结束*/
+}
+.menu_bg .menu_box .menu_all .tit_all a {
+  float: left;
+  width: 175px;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 158px -218px no-repeat #78a000;
+  font: 400 18px/44px "Microsoft YaHei";
+  color: #fff;
+  padding-left: 35px;
+  text-decoration: none;
+}
+.menu_bg .menu_box .menu_all .tit_sort {
+  border: 2px solid #91be16;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  height: 396px;
+  width: 206px;
+  display: none;
+  background-color: #fff;
+}
+.menu_bg .menu_box .menu_big {
+  float: right;
+  width: 988px;
+  height: 40px;
+  margin: 2px 0 0 2px;
+}
+.menu_bg .menu_box .menu_big li {
+  float: left;
+  position: relative;
+  z-index: 39;
+}
+.menu_bg .menu_box .menu_big li img {
+  position: absolute;
+  top: -8px;
+  right: 8px;
+}
+.menu_bg .menu_box .menu_big li a {
+  font: 400 18px/40px "Microsoft YaHei";
+  color: #fff !important;
+  padding: 0 25px;
+  text-decoration: none !important;
+  display: block;
+}
+.menu_bg .menu_box .menu_big li a:hover {
+  background-color: #79a000;
+}
+
+/*导航条 结束*/
+
+/*# sourceMappingURL=header.css.map */

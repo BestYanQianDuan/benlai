@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+</head>
+
+<body>
+    <!--顶部盒子 开始-->
+    <div class="head_top">
+        <div class="top_box">
+            <!--登录注册 开始-->
+            <div class="login" id="welcome_login">您好，请<a href="login.html">[登录]</a><a href="registor.html">[注册]</a><a href="">[机构会员]</a></div>
+            <!--登录注册 结束-->
+            <!--顶部盒子菜单 开始-->
+            <div class="head_menu">
+                <ul>
+                    <li><s></s>
+                        <div class="menu_word"><a href="">我的订单</a></div>
+                    </li>
+                    <li>
+                        <div class="head_twocode">
+                            <dl>
+                                <dt>
+                                    <a href="">掌上本来</a>
+                                    <div class="head_bg"></div>
+                                </dt>
+                                <dd>
+                                    <img src="https://image.benlailife.com/webStatic/images/top/App_QR_Code_3de39ad3.png" alt="" width="100" height="100">
+                                    <p>扫描下载客户端</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="head_service">
+                            <dl>
+                                <dt><a href="">客户服务</a>
+                                    <div class="head_bg"></div>
+                                </dt>
+                                <dd>
+                                    <p><a href="" class="zhiCustomBtn" data-type="easemob">在线客服</a></p>
+                                    <p><a href="" target="_blank">联系客服</a></p>
+                                    <p><a href="" target="_blank">销售热线</a></p>
+                                    <p><a href="" target="_blank">帮助中心</a></p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--顶部盒子菜单 结束-->
+        <div class="clear"></div>
+        <!--logo 开始-->
+        <div class="cart_top">
+            <div class="top_logo">
+                <a>
+                    <img src="https://image.benlailife.com/webStatic/images/top/logo_new_d634af2f.gif" alt="本来生活网">
+                </a>
+            </div>
+        </div>
+        <!--logo 结束-->
+        <!--cart detail部分 开始-->
+        <div class="cart">
+            <!--我的购物车-->
+            <div class="cart_title">
+                <div class="title_word">我的购物车</div>
+            </div>
+            <!--小标题-->
+            <div class="cart_tit" style="margin-top: 10px;">
+                <p>冷链配</p><em></em>
+            </div>
+            <!--主要内容 开始-->
+            <div class="cart_content">
+                <!--表头列表 开始-->
+                <ul class="content_tit">
+                    <input type="checkbox">
+                    <span style="width: 75px">全选</span>
+                    <span style="width: 390px">商品</span>
+                    <span style="width: 120px">单价</span>
+                    <span style="width: 100px">购买数量</span>
+                    <span style="width: 120px">小计</span> 操作
+                </ul>
+                <!--表头列表 结束-->
+                <!--购买商品详情列表 开始-->
+                <ul class="commodity_list">
+                    <!--单个商品价格详情 开始-->
+                    <li>
+                        <div class="check"> <input type="checkbox" name="" id="" checked="checked"> </div>
+                        <div class="pic">
+                            <img src="https://image1.benlailife.com//ProductImages/000/000/336/578/medium/711451e7-de2e-4cdc-96e0-b9cc5e9a73df.jpg">
+                        </div>
+                        <div class="name">
+                            <a href="">生态西兰花350g</a>
+                        </div>
+                        <div class="price">￥12.80</div>
+                        <!--购买数量 开始-->
+                        <div class="quantity">
+                            <!--减号按钮-->
+                            <p>
+                                <img src="https://image.benlailife.com/webStatic/images/goods/dey_03_0c4d2417.gif" width="15" height="15">
+                            </p>
+                            <!--数量显示框-->
+                            <p class="mt0"> <input type="text" class="textgt" value="1" maxlength="3"> </p>
+                            <!--加号按钮-->
+                            <p>
+                                <img src="https://image.benlailife.com/webStatic/images/goods/dey_04_0e745786.gif" width="15" height="15">
+                            </p>
+                        </div>
+                        <!--购买数量 结束-->
+                        <div class="subtotal">￥12.80</div>
+                        <div class="delete"><a class="mt5" id="" hidefocus="true" href="javascript:;">删除</a> </div>
+                    </li>
+                    <!--单个商品价格详情 结束-->
+                </ul>
+                <!--购买商品详情列表 结束-->
+                <!--总价格-->
+                <div class="all_price">总金额= <span>¥48.60</span></div>
+            </div>
+            <!--主要内容 结束-->
+        </div>
+        <!--cart detail部分 结束-->
+        <div class="clear"></div>
+        <!--尾部盒子-->
+        <div class="footer"></div>
+        <script src="script/thirdplugins/jquery.js"></script>
+        <script>
+            $(".footer").load("footer.html"); //引入尾部html
+        </script>
+</body>
+
+</html>

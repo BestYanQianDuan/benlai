@@ -1,0 +1,137 @@
+.wraper {
+  width: 1200px;
+  margin: 0 auto;
+  clear: both;
+}
+.wraper .register_banner {
+  float: right;
+}
+
+ul,
+li {
+  vertical-align: bottom;
+  margin: 0;
+}
+
+#formlogin #login .path {
+  width: 1200px;
+  float: left;
+  color: #959595;
+  line-height: 40px;
+}
+#formlogin #login .path a {
+  color: #959595;
+}
+#formlogin #login .register {
+  float: left;
+  width: 460px;
+  border: 1px solid #ddd;
+  margin-bottom: 50px;
+  height: auto !important;
+  min-height: 388px;
+}
+#formlogin #login .register .tit {
+  position: relative;
+  z-index: 0;
+  padding: 35px !important;
+}
+#formlogin #login .register .tit p {
+  float: left;
+  background: url(https://image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat;
+  font: 400 18px/30px "Microsoft YaHei";
+  padding-left: 40px;
+}
+#formlogin #login .register .tit p.ico00 {
+  background-position: 0 -62px;
+}
+#formlogin #login .register ul {
+  padding: 0 30px;
+  float: left;
+  width: 400px;
+}
+#formlogin #login .register ul dl {
+  float: left;
+  width: 398px;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding: 7px 0;
+  position: relative;
+  z-index: 0;
+}
+#formlogin #login .register ul dl s {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  background: url(https//image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat;
+}
+#formlogin #login .register ul dl .yes {
+  background-position: 0 -102px;
+}
+#formlogin #login .register ul dl p {
+  float: left;
+  width: 100px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  font: 400 14px/28px "Microsoft YaHei";
+  margin-right: 10px;
+  display: inline;
+}
+#formlogin #login .register ul dl input {
+  font: 400 14px/28px "Microsoft YaHei";
+  width: 240px;
+  height: 28px;
+  border: 0;
+}
+#formlogin #login .register .register_box {
+  height: auto !important;
+  min-height: 381px;
+}
+#formlogin #login .register .prompt {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  line-height: 30px;
+  color: #ff6900;
+}
+#formlogin #login .register .choose {
+  float: left;
+  font: 400 14px/20px "Microsoft YaHei";
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+#formlogin #login .register .choose input {
+  float: left;
+  margin: 4px 8px 0 0;
+}
+#formlogin #login .register .choose a {
+  color: #8ab700;
+  margin-left: 5px;
+}
+#formlogin #login .register .btn a {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font: 400 24px/58px "Microsoft YaHei";
+  color: #fff;
+  background-color: #ff6900;
+}
+#formlogin #login .register .word {
+  float: left;
+  width: 100%;
+  text-align: right;
+  font: 400 14px/35px "Microsoft YaHei";
+  padding-bottom: 25px;
+}
+#formlogin #login .register .word a {
+  color: #8ab700;
+  margin-left: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*# sourceMappingURL=login.css.map */

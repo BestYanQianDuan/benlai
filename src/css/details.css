@@ -1,0 +1,196 @@
+@charset "UTF-8";
+.clear {
+  clear: both;
+}
+
+.wraper {
+  width: 1200px;
+  margin: 0 auto;
+  clear: both;
+  /*详情页左侧 开始*/
+  /*详情页左侧 结束*/
+  /*详情页右侧 开始*/
+  /*详情页右侧 结束*/
+}
+.wraper .path {
+  width: 1200px;
+  float: left;
+  color: #959595;
+  line-height: 40px;
+}
+.wraper .path a {
+  color: #959595;
+}
+.wraper .left_box {
+  width: 596px;
+  float: left;
+}
+.wraper .left_box dl {
+  width: 84px;
+  float: left;
+}
+.wraper .left_box dl dt {
+  /*向上箭头按钮*/
+  /*向下箭头按钮*/
+}
+.wraper .left_box dl dt .up {
+  width: 82px;
+  height: 15px;
+  float: left;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  background: url(https://image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 33px 5px no-repeat;
+}
+.wraper .left_box dl dt .down {
+  width: 82px;
+  height: 15px;
+  float: left;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  background: url(https://image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 33px -21px no-repeat;
+}
+.wraper .left_box dl #smallPic {
+  width: 84px;
+  float: left;
+  overflow: hidden;
+  margin-top: 8px;
+  height: 460px;
+}
+.wraper .left_box dl #smallPic li {
+  width: 82px;
+  height: 82px;
+  display: block;
+  border: 1px solid #c9c9c9;
+}
+.wraper .left_box dl #smallPic li img {
+  display: inline-block;
+  width: 82px;
+  height: 82px;
+  opacity: 1;
+}
+.wraper .left_box .left_pic {
+  float: right;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border: 1px solid #c9c9c9;
+  margin-top: 0px;
+}
+.wraper .left_box .left_pic img {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.wraper .left_box .left_pic .sm_fang {
+  width: 175px;
+  height: 175px;
+  background: #ccc;
+  opacity: 0.4;
+  display: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.wraper .left_box .big_fang {
+  width: 500px;
+  height: 500px;
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+  left: 700px;
+  border: 1px solid #c9c9c9;
+}
+.wraper .left_box .big_fang img {
+  display: block;
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wraper .right_box {
+  float: right;
+  width: 570px;
+}
+.wraper .right_box .intro_name {
+  float: left;
+  width: 570px;
+  height: auto !important;
+  min-height: 68px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.wraper .right_box .intro_name h1 {
+  font: 800 18px/34px "Microsoft YaHei";
+  color: #4c4c4c;
+}
+.wraper .right_box .intro_name p {
+  font-size: 14px;
+  color: #ff6900;
+  line-height: 26px;
+}
+.wraper .right_box .intro_sales {
+  float: left;
+  width: 570px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 18px 0;
+}
+.wraper .right_box .intro_sales .price {
+  font: 800 26px/26px "Microsoft YaHei";
+  color: #ff6900;
+  float: left;
+}
+.wraper .right_box .buy {
+  float: left;
+  width: 570px;
+  margin-bottom: 20px;
+}
+.wraper .right_box .buy dl {
+  float: left;
+  width: 570px;
+  height: 52px;
+}
+.wraper .right_box .buy dl dt {
+  width: 77px;
+  float: left;
+  margin-right: 15px;
+}
+.wraper .right_box .buy dl dt input {
+  border: 1px solid #cdcdcd;
+  width: 54px;
+  height: 48px;
+  font: 400 24px/48px "Microsoft YaHei";
+  color: #626262;
+  text-align: center;
+  float: left;
+}
+.wraper .right_box .buy dl dt a {
+  float: left;
+  width: 19px;
+  height: 26px;
+  display: block;
+}
+.wraper .right_box .buy dl dt a.up {
+  background: url(https://image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 0 -52px no-repeat;
+}
+.wraper .right_box .buy dl dt a.down {
+  background: url(https://image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) -20px -52px no-repeat;
+}
+.wraper .right_box .buy dl dd {
+  float: left;
+}
+.wraper .right_box .buy dl dd .buy_btn {
+  float: left;
+  margin-right: 15px;
+}
+.wraper .right_box .buy dl dd .buy_btn a {
+  width: 182px;
+  height: 52px;
+  display: block;
+  background: url(https://image.benlailife.com/webStatic/images/n_detail/detailsp_btn_c8171162.gif) no-repeat;
+}
+.wraper .right_box .buy dl dd .buy_btn a.btn01 {
+  background-position: 0 0;
+}
+
+/*# sourceMappingURL=details.css.map */

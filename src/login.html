@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>本来生活登录</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+    <!--头部盒子-->
+    <div class="header"></div>
+    <!--主体内容 开始-->
+    <div class="wraper" id="layoutContent">
+        <div id="LoginTmpl">
+            <!--登录表单 开始-->
+            <form id="formlogin" action="" method="post">
+                <div id="login">
+                    <div class="path"><a href="index1.html">首页</a> &gt; 登录</div>
+                    <div class="register">
+                        <ul class="tit">
+                            <p class="ico00">本来会员登录</p>
+                        </ul>
+                        <ul> <input type="hidden" name="txtFrom" id="txtFrom" value=""> <input type="hidden" value="1" id="" name=""> <input type="hidden" value="1" id="" name=""> </ul>
+                        <ul class="register_box">
+                            <dl data-type="account">
+                                <p>手机号</p> <input type="text" value="" placeholder="请输入手机号" name="tel" id="tel" class="tel">
+                                <div class="prompt"></div>
+                            </dl>
+                            <dl data-type="pass">
+                                <p>密码</p> <input type="password" name="password" value="" id="password" class="password">
+                                <div class="prompt"></div>
+                            </dl>
+                            <div class="choose"><input type="checkbox" id="" checked="checked" name="">记住我<a href="">忘记密码?</a></div>
+                            <div class="btn"><a href="">立即登录</a></div>
+                            <div class="word">还不是本来生活网用户？<a href="registor.html">立即注册</a></div>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </form>
+            <!--登录表单 结束-->
+        </div>
+        <!--右侧banner图-->
+        <div class="register_banner"></div>
+        <p>
+            <a href="" target="_blank">
+                <img src="http://image.benlailife.com/images/gz/banner/20190301/dlmm01.jpg">
+            </a>
+        </p>
+    </div>
+    <a href="" target="_blank">
+        <div class="clear"></div>
+    </a>
+    </div>
+    <!--主体内容 结束-->
+    <!--尾部盒子-->
+    <div class="footer"></div>
+    <script src="script/thirdplugins/jquery.js"></script>
+    <script>
+        $(".header").load("header.html"); //引入头部html
+        $(".footer").load("footer.html"); //引入尾部html
+        function addCookie(key, value, day) {
+            var date = new Date(); //创建日期对象
+            date.setDate(date.getDate() + day); //过期时间：获取当前的日期+天数，设置给date
+            document.cookie = key + '=' + encodeURI(value) + ';expires=' + date; //添加cookie，设置过期时间
+        }
+
+
+        $('.btn').on('click', function() {
+            var $tel = $('#tel').val();
+            var $password = $('#password').val();
+            $.ajax({
+                type: 'post',
+                url: 'php/login.php',
+                data: { //将用户名和密码传输给后端
+                    tel: $tel,
+                    pass: $password
+                },
+                success: function(data) { //请求成功，接收后端返回的值
+                    if (!data) { //用户名或者密码错误
+                        $('#error').html('用户名或者密码错误');
+                        $('#password').val('');
+                    } else { //成功,存cookie,跳转到首页
+                        addCookie('UserName', $username, 7);
+                        location.href = 'index1.html';
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

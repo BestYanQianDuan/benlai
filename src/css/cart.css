@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/*顶部盒子*/
+.head_top {
+  font-size: 12px;
+  width: 100%;
+  float: left;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #e5e5e5;
+}
+.head_top .login {
+  color: #3e4141;
+  line-height: 30px;
+  float: left;
+  margin-right: 20px;
+}
+.head_top .login a {
+  color: #ff6900;
+  margin: 0 0 0 5px;
+}
+
+.top_box {
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 79;
+}
+
+/*顶部盒子菜单*/
+.head_menu {
+  float: right;
+}
+.head_menu ul,
+.head_menu li {
+  vertical-align: bottom;
+  padding: 0;
+  margin: 0;
+}
+.head_menu li {
+  float: left;
+  position: relative;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) right -79px no-repeat;
+}
+.head_menu li .menu_word {
+  margin: 0 15px;
+}
+.head_menu li .menu_word a {
+  line-height: 30px;
+  color: #3e4141;
+}
+.head_menu s {
+  top: 7px;
+  left: 0;
+  width: 0;
+  height: 15px;
+  border-left: 1px solid #e6e6e6;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+/*掌上本来 开始*/
+.head_twocode {
+  float: left;
+}
+.head_twocode dl {
+  width: 101px;
+  height: 30px;
+}
+.head_twocode dl dt a {
+  width: 71px;
+  padding: 0 0 0 30px;
+  display: block;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ipico01_dfa609de.gif) 11px 4px no-repeat;
+  line-height: 30px;
+  color: #3e4141;
+  text-decoration: none;
+}
+.head_twocode dl dd {
+  width: 93px;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  padding: 0 4px;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(192, 192, 192, 0.5);
+  z-index: 78;
+  display: none;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.head_twocode dl dd img {
+  width: 95px;
+  margin-top: 15px;
+}
+.head_twocode dl dd p {
+  color: #3e4141;
+  line-height: 40px;
+  text-align: center;
+}
+
+img {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/*掌上本来 结束*/
+/*客户服务 开始*/
+.head_service {
+  float: left;
+}
+.head_service dl {
+  width: 87px;
+  height: 30px;
+}
+.head_service dl dt a {
+  width: 73px;
+  padding: 0 0 0 14px;
+  display: block;
+  background: url(https://image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 65px 13px no-repeat;
+  line-height: 30px;
+  color: #3e4141;
+  text-decoration: none;
+}
+.head_service dl dd {
+  width: 79px;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  padding: 0 4px 7px;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(192, 192, 192, 0.5);
+  z-index: 78;
+  display: none;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.head_service dl dd p {
+  padding: 0 12px;
+}
+.head_service dl dd p a {
+  color: #3e4141;
+  line-height: 22px;
+}
+
+dd {
+  margin-left: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/*客户服务 结束*/
+/*logo 开始*/
+.cart_top {
+  margin: 0 auto;
+  height: 120px;
+  width: 990px;
+}
+.cart_top .top_logo {
+  margin-top: 25px;
+}
+.cart_top a img {
+  width: 136px;
+  height: 56px;
+  border: 0;
+}
+
+/*logo 结束*/
+/*cart detail部分  开始*/
+.cart {
+  width: 990px;
+  margin: 0 auto;
+  /*我的购物车 开始*/
+  /*我的购物车 结束*/
+  /*小标题 开始*/
+  /*小标题 结束*/
+  /*主要内容 开始*/
+  /*主要内容 结束*/
+}
+.cart .cart_title {
+  float: left;
+  height: 35px;
+  width: 990px;
+}
+.cart .cart_title .title_word {
+  font: 400 16px/35px "Microsoft YaHei";
+  float: left;
+}
+.cart .cart_tit {
+  float: left;
+  height: 36px;
+  width: 100%;
+  margin: 50px 0 0;
+  background-color: #ff9000;
+  margin-bottom: -3px;
+}
+.cart .cart_tit p {
+  float: left;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 36px;
+  padding: 0 10px;
+  border-radius: 100px;
+}
+.cart .cart_content {
+  float: left;
+  width: 990px;
+  margin: 3px 0 0;
+  /*表头列表 开始*/
+  /*表头列表 结束*/
+  /*购买商品详情列表 开始*/
+  /*购买商品详情列表 结束*/
+  /*商品总价格 开始*/
+  /*商品总价格 结束*/
+}
+.cart .cart_content .content_tit {
+  height: 40px;
+  background-color: #fafbf8;
+  border-top: 1px solid #edecec;
+  border-bottom: 1px solid #edecec;
+  font: 400 12px/40px "宋体";
+}
+.cart .cart_content .content_tit input {
+  float: left;
+  margin: 13px 27px 0 35px;
+}
+.cart .cart_content .content_tit span {
+  display: inline-block;
+}
+.cart .cart_content .commodity_list {
+  /*单个商品价格详情 开始*/
+  /*单个商品价格详情 结束*/
+}
+.cart .cart_content .commodity_list li {
+  border-bottom: 1px dotted #e1e1e1;
+  padding: 20px 0;
+  float: left;
+  width: 990px;
+  /*单个商品的复选框*/
+  /*商品图片*/
+  /*商品名*/
+  /*商品单价*/
+  /*购买数量*/
+  /*当前商品总价格*/
+  /*删除操作按钮*/
+}
+.cart .cart_content .commodity_list li .check {
+  width: 40px;
+  float: left;
+  margin: 22px 0 0 35px;
+}
+.cart .cart_content .commodity_list li .pic {
+  float: left;
+  width: 75px;
+}
+.cart .cart_content .commodity_list li .pic img {
+  width: 60px;
+  height: 60px;
+}
+.cart .cart_content .commodity_list li .name {
+  margin: 0 40px 0 0;
+  width: 350px;
+  float: left;
+}
+.cart .cart_content .commodity_list li .name a {
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  line-height: 22px;
+  height: 44px;
+}
+.cart .cart_content .commodity_list li .price {
+  font: 400 18px/22px "Microsoft YaHei";
+  float: left;
+  width: 115px;
+}
+.cart .cart_content .commodity_list li .quantity {
+  float: left;
+  margin: 0 0 0 5px;
+  width: 84px;
+  /*数量显示框*/
+}
+.cart .cart_content .commodity_list li .quantity p {
+  float: left;
+  margin-top: 3px;
+  line-height: 16px;
+}
+.cart .cart_content .commodity_list li .quantity .textgt {
+  border: 1px solid #dadada;
+  width: 36px;
+  font-size: 14px;
+  padding: 3px;
+  line-height: 14px;
+  text-align: center;
+  display: inline;
+  margin: 0 5px;
+}
+.cart .cart_content .commodity_list li .subtotal {
+  float: left;
+  width: 115px;
+  margin-left: 30px;
+  font: 400 20px/22px "Microsoft YaHei";
+  color: #ff9000;
+}
+.cart .cart_content .commodity_list li .delete {
+  width: 80px;
+  float: right;
+  line-height: 22px;
+}
+.cart .cart_content .all_price {
+  font: 400 14px/26px "Microsoft YaHei";
+  text-align: right;
+}
+.cart .cart_content .all_price span {
+  font: 800 24px/26px "Microsoft YaHei";
+  color: #eb6100;
+}
+
+/*cart detail部分  结束*/
+
+/*# sourceMappingURL=cart.css.map */
